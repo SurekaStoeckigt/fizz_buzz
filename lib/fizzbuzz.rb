@@ -1,3 +1,5 @@
+#require 'integer'
+
 def fizzbuzz(number)
     if number % 3 == 0 && number % 5 ==0
      "fizzbuzz"
@@ -9,3 +11,8 @@ def fizzbuzz(number)
         number
     end
 end
+
+
+#(1..100).to_a.each {|num| fizzbuzz(num)}
+
+(1..100).map {|num| fizzbuzz(num)}
